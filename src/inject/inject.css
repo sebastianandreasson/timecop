@@ -1,3 +1,26 @@
 /**
  * Place your custom CSS styles here.
  **/
+
+.injected-hour {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  right: 5px;
+  bottom: -5px;
+  font-weight: bold;
+}
+
+.day-summary {
+  background-color: rgb(192, 233, 255);
+  margin-top: 50px;
+
+  z-index: 999;
+  bottom: 0;
+  left: 0px;
+  height: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

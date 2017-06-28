@@ -1,9 +1,9 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "TIMECOP",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "Displays hours in outlook calendar",
+  "homepage_url": "http://github.com/sebastianandreasson",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -17,12 +17,12 @@
     "persistent": true
   },
   "permissions": [
-    "https://mail.iteam.se"
+    "https://mail.iteam.se/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://mail.iteam.se/*"
       ],
       "css": [
         "src/inject/inject.css"
@@ -30,9 +30,10 @@
     },
     {
       "matches": [
-        "https://www.google.com/*"
+        "https://mail.iteam.se/*"
       ],
       "js": [
+        "js/jquery/jquery.js",
         "src/inject/inject.js"
       ]
     }
